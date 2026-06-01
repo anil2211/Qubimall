@@ -97,19 +97,19 @@ sudo ./aws/install
 1. **Clone the Repository:**
 First, clone this repo to your local machine:<br/>
 ```bash
-git clone https://github.com/Satyams-git/Qualibytes-Ecommerce
+git clone https://github.com/anil2211/Qubimall.git
 cd terraform
 ```
 2. **Generate SSH Key Pair:**
 Create a new SSH key to access your EC2 instance:
 ```bash
-ssh-keygen -f qualibytes-key
+ssh-keygen -f qubimall-key
 ```
-This will prompt you to create a new key file named qualibytes-key.
+This will prompt you to create a new key file named qubimall-key.
 
 3. **Private key permission:** Change your private key permission:
 ```bash
-chmod 400 qualibytes-key
+chmod 400 qubimall-key
 ```
 
 4. **Initialize Terraform:**
@@ -132,7 +132,7 @@ terraform apply
 7. **Access Your EC2 Instance;** <br/>
 After deployment, grab the public IP of your EC2 instance from the output or AWS Console, then connect using SSH:
 ```bash
-ssh -i qualibytes-key ubuntu@<public-ip>
+ssh -i qubimal-key ubuntu@<public-ip>
 ```
 8. **Update your kubeconfig:**
 wherever you want to access your eks wheather it is yur local machine or bastion server this command will help you to interact with your eks.
@@ -144,7 +144,7 @@ aws configure
 ```
 
 ```bash
-aws eks --region ap-south-1 update-kubeconfig --name qualibytes-eks-cluster
+aws eks --region ap-south-1 update-kubeconfig --name qubimall-eks-cluster
 ```
 9. **Check your cluster:**
 ```bash
@@ -225,7 +225,7 @@ sudo systemctl status jenkins
 > > In **General**<br/>
 > > - **Description:** qbShop<br/>
 > > - **Check the box:** `GitHub project`<br/>
-> > - **GitHub Repo URL:** `https://github.com/<your user-name/qualibytes-ecommerce-app`<br/>
+> > - **GitHub Repo URL:** `https://github.com/<your user-name/qubimall-ecommerce-app`<br/>
 >
 > > In **Trigger**<br/>
 > > - **Check the box:**`GitHub hook trigger for GITScm polling`<br/>
@@ -233,7 +233,7 @@ sudo systemctl status jenkins
 > > In **Pipeline**<br/>
 > > - **Definition:** `Pipeline script from SCM`<br/>
 > > - **SCM:** `Git`<br/>
-> > - **Repository URL:** `https://github.com/<your user-name/qualibytes-ecommerce-app`<br/>
+> > - **Repository URL:** `https://github.com/<your user-name/qubimall-ecommerce-app`<br/>
 > > - **Credentials:** `github-credentials`<br/>
 > > - **Branch:** master<br/>
 > > - **Script Path:** `Jenkinsfile`<br/>
@@ -279,7 +279,7 @@ Add your Access Key and Secret Key when prompted.
 **9. Update Kubeconfig for EKS**<br/>
 Run the following important command:
 ```bash
-aws eks update-kubeconfig --region eu-west-1 --name qualibytes-eks-cluster
+aws eks update-kubeconfig --region eu-west-1 --name qubimall-eks-cluster
 ```
 * This command maps your EKS cluster with your Bastion server.
 * It helps to communicate with EKS components.
@@ -357,7 +357,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 >  -  **Cluster URL:**
  https://kubernetes.default.svc (usually shown as "default")
 >  -    **Namespace:**
- qualibytes-ecommerce-app (or your desired namespace)
+ qubimall-ecommerce-app (or your desired namespace)
 
 > 5. Click on “Create”.
 
