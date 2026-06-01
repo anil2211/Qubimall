@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: db-migration
+  namespace: qbshop
+  annotations:
+    argocd.argoproj.io/sync-options: Replace=true
+
+spec:
+  template:
+    spec:
+      containers:
+      - name: qbs-migration
+        image: anilvcr/qbshop-migration:5
+        imagePullPolicy: Always
+        env:
+        - name: MONGODB_URI
+          value: "mongodb://mongodb-service:27017/easyshop"
+
+      restartPolicy: OnFailure
