@@ -83,8 +83,8 @@ const FeaturedProducts = ({ featured }: FeaturedParams) => {
         </h1>
         <FeaturedNav />
         <div className="grid gap-4 grid-cols-1 min-[360px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-6">
-          console.log("products:", products);
-          console.log("isArray:", Array.isArray(products));
+          {/* console.log("products:", products);
+          console.log("isArray:", Array.isArray(products)); */}
           {products.map((product: AllProduct) => (
             <ProductCard key={product._id} product={product} variants="style-2" />
           ))}
