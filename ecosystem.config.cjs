@@ -1,6 +1,6 @@
 const config = {
   apps: [{
-    name: 'easyshop-frontend',
+    name: 'Qubimallshop-frontend',
     script: './server.js',
     instances: 'max',
     exec_mode: 'cluster',

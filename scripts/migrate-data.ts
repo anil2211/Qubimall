@@ -1,8 +1,8 @@
 import { promises as fs } from 'fs';
-import path from 'path';
 import mongoose from 'mongoose';
+import path from 'path';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://easyshop-mongodb:27017/easyshop';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://Qubimallshop-mongodb:27017/Qubimallshop';
 const scriptDir = path.resolve(path.dirname(''));
 
 // Product Schema

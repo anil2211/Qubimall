@@ -106,7 +106,7 @@ flowchart TD
 
 ### Docker Setup Guide
 
-This guide will help you run EasyShop using Docker containers. No local Node.js or MongoDB installation required!
+This guide will help you run Qubimallshop using Docker containers. No local Node.js or MongoDB installation required!
 
 ### Prerequisites
 
@@ -118,7 +118,7 @@ This guide will help you run EasyShop using Docker containers. No local Node.js 
 1. Create a file named `.env.local` in the root directory with the following content:
 ```env
 # Database Configuration
-MONGODB_URI=mongodb://qbs-mongodb:27017/easyshop
+MONGODB_URI=mongodb://qbs-mongodb:27017/Qubimallshop
 
 # NextAuth Configuration
 NEXTAUTH_URL=http://localhost:3000  # Replace with your EC2 instance's public IP or put localhost:3000
@@ -166,14 +166,14 @@ If you prefer more control, you can run each service manually:
 
 1. Create a Docker network:
 ```bash
-docker network create easyshop-network
+docker network create Qubimallshop-network
 ```
 
 2. Start MongoDB:
 ```bash
 docker run -d \
   --name qbs-mongodb \
-  --network easyshop-network \
+  --network Qubimallshop-network \
   -p 27017:27017 \
   -v mongodb_data:/data/db \
   mongo:latest
@@ -191,16 +191,16 @@ docker build -t anilvcr/Qubimall-shop-migration:1 -f scripts/Dockerfile.migratio
 
 # Run migration
 docker run --rm \
-  --network easyshop-network \
+  --network Qubimallshop-network \
   --env-file .env.local \
   qbs-migration
 ```
 
-5. Start the EasyShop application:
+5. Start the Qubimallshop application:
 ```bash
 docker run -d \
   --name qbs-app \
-  --network easyshop-network \
+  --network Qubimallshop-network \
   -p 3000:3000 \
   --env-file .env.local \
   anilvcr/Qubimall-shop-app:1
@@ -210,7 +210,7 @@ docker run -d \
 
 1. Open your web browser
 2. Visit [http://localhost:3000](http://localhost:3000)
-3. You should see the EasyShop homepage!
+3. You should see the Qubimallshop homepage!
 
 ### Useful Docker Commands
 
@@ -229,7 +229,7 @@ docker stop qbs-app qbs-mongodb
 docker rm qbs-app qbs-mongodb
 
 # Remove network
-docker network rm easyshop-network
+docker network rm Qubimallshop-network
 ```
 
 ### Troubleshooting
@@ -237,11 +237,11 @@ docker network rm easyshop-network
 1. If you can't connect to MongoDB:
    - Make sure the MongoDB container is running: `docker ps`
   - Check MongoDB logs: `docker logs qbs-mongodb`
-   - Verify network connection: `docker network inspect easyshop-network`
+   - Verify network connection: `docker network inspect Qubimallshop-network`
 
 2. If the application isn't accessible:
    - Check if the container is running: `docker ps`
-   - View application logs: `docker logs easyshop`
+   - View application logs: `docker logs Qubimallshop`
    - Make sure port 3000 isn't being used by another application
 
 3. If migration fails:
@@ -284,7 +284,7 @@ Error: MongoDB connection failed
 ## 📦 Project Structure
 
 ```
-easyshop/
+Qubimallshop/
 ├── src/
 │   ├── app/              # Next.js App Router pages
 │   ├── components/       # Reusable React components

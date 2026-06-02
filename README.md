@@ -424,7 +424,7 @@ kubectl get svc nginx-ingress-ingress-nginx-controller -n ingress-nginx -o jsonp
 > >   name: qbshop-config
 > >   namespace: qbshop
 > > data:
-> >   MONGODB_URI: "mongodb://mongodb-service:27017/easyshop"
+> >   MONGODB_URI: "mongodb://mongodb-service:27017/Qubimallshop"
 > >   NODE_ENV: "production"
 > >   NEXT_PUBLIC_API_URL: "https://qbshop.asriv.shop/api"
 > >   NEXTAUTH_URL: "https://qbshop.asriv.shop/"

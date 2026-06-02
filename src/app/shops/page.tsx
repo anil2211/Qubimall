@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const shops = [
   {
@@ -54,7 +53,7 @@ const shops = [
 export const metadata: Metadata = {
   title: "All Shops",
   description:
-    "EasyShop is the user-friendly Next.js eCommerce template perfect for launching your online store. With its clean design and customizable options, EasyShop makes selling online a breeze. Start building your dream store today and boost your online presence effortlessly!",
+    "Qubimallshop is the user-friendly Next.js eCommerce template perfect for launching your online store. With its clean design and customizable options, Qubimallshop makes selling online a breeze. Start building your dream store today and boost your online presence effortlessly!",
 };
 
 const ShopsPage = () => {

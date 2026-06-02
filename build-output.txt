@@ -6,9 +6,11 @@
    - Environments: .env
 
    Creating an optimized production build ...
-Compiler server unexpectedly exited with code: null and signal: SIGTERM
 Compiler edge-server unexpectedly exited with code: null and signal: SIGTERM
-Compiler client unexpectedly exited with code: null and signal: SIGTERM
+Browserslist: browsers data (caniuse-lite) is 18 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\cache\webpack\client-production\16.pack_' -> 'D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\cache\webpack\client-production\16.pack'
  ✓ Compiled successfully
    Linting and checking validity of types ...
    Collecting page data ...
@@ -20,8 +22,8 @@ Error getting token from request: ex [Error]: Dynamic server usage: Page couldn'
     at Module.eE (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29694)
     at i (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34572)
     at Object.get (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34788)
-    at u (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:2345)
-    at l (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:2811)
+    at u (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\check\route.js:1:2594)
+    at l (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\check\route.js:1:3060)
     at d (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\check\route.js:1:783)
     at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42490
     at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\server\lib\trace\tracer.js:133:36
@@ -35,8 +37,8 @@ Error getting token from request: ex [Error]: Dynamic server usage: Page couldn'
     at Module.eE (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29694)
     at i (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34572)
     at Object.get (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34788)
-    at l (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\login\route.js:1:2833)
-    at u (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\login\route.js:1:3299)
+    at u (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:2345)
+    at l (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:2811)
     at d (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:737)
     at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42490
     at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\server\lib\trace\tracer.js:133:36
@@ -46,36 +48,10 @@ Error getting token from request: ex [Error]: Dynamic server usage: Page couldn'
 }
    Generating static pages (18/36) 
    Generating static pages (27/36) 
-Featured products error: MongooseServerSelectionError: getaddrinfo ENOTFOUND qbs-mongodb
-    at _handleConnectionErrors (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1110:11)
-    at NativeConnection.openUri (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1041:11)
-    at async s (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\check\route.js:1:3682)
-    at async d (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\products\featured\route.js:1:756)
-    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42484
-    at async eI.execute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:32486)
-    at async eI.handle (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:43737)
-    at async exportAppRoute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\routes\app-route.js:77:26)
-    at async exportPageImpl (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:175:20)
-    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:239:16 {
-  reason: TopologyDescription {
-    type: 'Unknown',
-    servers: Map(1) { 'qbs-mongodb:27017' => [ServerDescription] },
-    stale: false,
-    compatible: true,
-    heartbeatFrequencyMS: 10000,
-    localThresholdMS: 15,
-    setName: null,
-    maxElectionId: null,
-    maxSetVersion: null,
-    commonWireVersion: 0,
-    logicalSessionTimeoutMinutes: null
-  },
-  code: undefined
-}
 Error fetching books: MongooseServerSelectionError: getaddrinfo ENOTFOUND qbs-mongodb
     at _handleConnectionErrors (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1110:11)
     at NativeConnection.openUri (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1041:11)
-    at async s (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:3433)
+    at async s (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\check\route.js:1:3682)
     at async c (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\products\books\route.js:1:539)
     at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42484
     at async eI.execute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:32486)
@@ -98,22 +74,82 @@ Error fetching books: MongooseServerSelectionError: getaddrinfo ENOTFOUND qbs-mo
   },
   code: undefined
 }
- ✓ Generating static pages (36/36) 
-
-> Build error occurred
-Error: ENOENT: no such file or directory, rename 'D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\export\500.html' -> 'D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\pages\500.html'
-    at async Object.rename (node:internal/fs/promises:784:10)
-    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:1660:33
-    at async Span.traceAsyncFn (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\trace\trace.js:151:20)
-    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:1711:25
-    at async Span.traceAsyncFn (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\trace\trace.js:151:20)
-    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:1343:17
-    at async Span.traceAsyncFn (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\trace\trace.js:151:20)
-    at async build (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:374:9)
-    at async main (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\bin\next:155:5) {
-  errno: -4058,
-  code: 'ENOENT',
-  syscall: 'rename',
-  path: 'D:\\01DEVOPS-PROJECTS\\Qubimall\\QubiMall-ecommerce\\.next\\export\\500.html',
-  dest: 'D:\\01DEVOPS-PROJECTS\\Qubimall\\QubiMall-ecommerce\\.next\\server\\pages\\500.html'
+Featured products error: MongooseServerSelectionError: getaddrinfo ENOTFOUND qbs-mongodb
+    at _handleConnectionErrors (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1110:11)
+    at NativeConnection.openUri (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1041:11)
+    at async s (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\login\route.js:1:3921)
+    at async d (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\products\featured\route.js:1:756)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42484
+    at async eI.execute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:32486)
+    at async eI.handle (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:43737)
+    at async exportAppRoute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\routes\app-route.js:77:26)
+    at async exportPageImpl (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:175:20)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:239:16 {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'qbs-mongodb:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
 }
+ ✓ Generating static pages (36/36) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ λ /                                    1.57 kB         195 kB
+├ ○ /_not-found                          0 B                0 B
+├ λ /api/auth/check                      0 B                0 B
+├ λ /api/auth/login                      0 B                0 B
+├ λ /api/auth/logout                     0 B                0 B
+├ λ /api/auth/me                         0 B                0 B
+├ λ /api/auth/register                   0 B                0 B
+├ λ /api/cart                            0 B                0 B
+├ λ /api/cart/[productId]                0 B                0 B
+├ λ /api/orders                          0 B                0 B
+├ λ /api/orders/[orderId]                0 B                0 B
+├ λ /api/products                        0 B                0 B
+├ λ /api/products/[productId]            0 B                0 B
+├ λ /api/products/books                  0 B                0 B
+├ λ /api/products/featured               0 B                0 B
+├ λ /api/singleProduct/[slug]            0 B                0 B
+├ ○ /checkout                            7.57 kB         180 kB
+├ ○ /checkout/success                    1.29 kB         102 kB
+├ ○ /contact                             3.28 kB         116 kB
+├ ○ /icon.svg                            0 B                0 B
+├ ○ /login                               4.07 kB         158 kB
+├ ○ /offers                              297 B          89.5 kB
+├ ○ /orders                              1.44 kB         124 kB
+├ λ /products/[slug]                     5.62 kB         190 kB
+├ λ /profile                             4.67 kB         161 kB
+├ ○ /profile/change-password             4.71 kB         151 kB
+├ ○ /profile/orders                      3.06 kB         132 kB
+├ ○ /profile/wishlists                   5 kB            157 kB
+├ ○ /register                            4.12 kB         159 kB
+├ ○ /shops                               188 B          96.2 kB
+├ ● /shops/[shop]                        176 B           158 kB
+├   ├ /shops/bags
+├   ├ /shops/bakery
+├   ├ /shops/books
+├   └ [+6 more paths]
+└ λ /shops/[shop]/[category]             176 B           158 kB
++ First Load JS shared by all            84.3 kB
+  ├ chunks/8069-1ede617602ffa437.js      28.9 kB
+  ├ chunks/fd9d1056-cc5ad3684a81277a.js  53.4 kB
+  └ other shared chunks (total)          2 kB
+
+
+ƒ Middleware                             50.1 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+λ  (Dynamic)  server-rendered on demand using Node.js
+
