@@ -5,16 +5,16 @@ import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "../ui/textarea";
 import { Variants, motion } from "framer-motion";
+import { Textarea } from "../ui/textarea";
 
 const formSchema = z.object({
   title: z.string().min(3, 'Name must be at least 3 characters'),
@@ -34,7 +34,7 @@ const ShippingAddressForm = ({ onFormDataChange }: ShippingAddressFormProps) => 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      title: "QualiBytesShop",
+      title: "QubimallShop",
       phone: "+91 9400990439",
       streetAddress: "House 1, Street 1",
       city: "Muzaffarpur",

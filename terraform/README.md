@@ -1,1 +1,1 @@
-aws eks --region eu-west-1 update-kubeconfig --name qualibytes-eks-cluster
+aws eks --region eu-west-1 update-kubeconfig --name Qubimall-eks-cluster

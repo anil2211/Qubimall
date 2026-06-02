@@ -13,7 +13,7 @@ data "aws_ami" "os_image" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "terra-automate-key"
-  public_key = file("qualibytes-key.pub")
+  public_key = file("Qubimall-key.pub")
 }
 
 resource "aws_default_vpc" "default" {

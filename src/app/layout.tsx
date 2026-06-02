@@ -1,15 +1,15 @@
+import StoreProvider from "@/app/StoreProvider";
+import AddedCart from "@/components/AddedCart";
+import Footer from "@/components/Footer";
+import MobileBottomMenu from "@/components/MobileBottomMenu";
+import Navbar from "@/components/Navbar";
+import ScrollToTopBtn from "@/components/ScrollToTopBtn";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { AuthProvider } from "@/components/providers/AuthProvider";
+import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import AddedCart from "@/components/AddedCart";
-import StoreProvider from "@/app/StoreProvider";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import MobileBottomMenu from "@/components/MobileBottomMenu";
-import { Toaster } from "@/components/ui/toaster";
-import ScrollToTopBtn from "@/components/ScrollToTopBtn";
-import { AuthProvider } from "@/components/providers/AuthProvider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -17,7 +17,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "QualiBytesShop - Your One-Stop Shopping Destination",
+  title: "QubimallShop - Your One-Stop Shopping Destination",
   description: "Shop the latest trends in fashion, electronics, and more.",
 };
 

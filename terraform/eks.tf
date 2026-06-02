@@ -35,7 +35,7 @@ module "eks" {
 
   eks_managed_node_groups = {
 
-    qualibytes-demo-ng = {
+    Qubimall-demo-ng = {
       min_size     = 2
       max_size     = 3
       desired_size = 2
@@ -47,7 +47,7 @@ module "eks" {
       use_custom_launch_template = false  # Important to apply disk size!
 
       tags = {
-        Name = "qualibytes-demo-ng"
+        Name = "Qubimall-demo-ng"
         Environment = "dev"
         ExtraTag = "e-commerce-app"
       }

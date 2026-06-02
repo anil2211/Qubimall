@@ -78,8 +78,8 @@ Thumbs.db
 mongodb/
 
 terraform/.terraform/*
-terraform/qualibytes-key.pub
-terraform/qualibytes-key
+terraform/Qubimall-key.pub
+terraform/Qubimall-key
 terraform/terraform.tfstate*
 terraform/.terraform.lock.hcl
 terraform/.terraform/modules/*
@@ -92,5 +92,5 @@ terraform.tfstate
 terraform.tfstate.backup
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
-qualibytes-key.pub
-qualibytes-key
+Qubimall-key.pub
+Qubimall-key

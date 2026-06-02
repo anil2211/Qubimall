@@ -2,12 +2,11 @@ import ContactForm from "@/components/forms/ContactForm";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "QualiBytesShop is the user-friendly Next.js eCommerce template perfect for launching your online store. With its clean design and customizable options, QualiBytesShop makes selling online a breeze. Start building your dream store today and boost your online presence effortlessly!",
+    "QubimallShop is the user-friendly Next.js eCommerce template perfect for launching your online store. With its clean design and customizable options, QubimallShop makes selling online a breeze. Start building your dream store today and boost your online presence effortlessly!",
 };
 
 const ContactPage = () => {
@@ -30,7 +29,7 @@ const ContactPage = () => {
 
           <div className="mt-4">
             <h4 className="font-semibold mb-1">Email Address</h4>
-            <p className="text-sm text-muted-foreground">support@qualibytes.com</p>
+            <p className="text-sm text-muted-foreground">support@qubimall.com</p>
           </div>
           <div className="mt-4">
             <h3 className="font-semibold">Follow Me</h3>
@@ -41,7 +40,7 @@ const ContactPage = () => {
                 asChild
               >
                 <a
-                  href="https://qualibytes.com"
+                  href="https://qubimall.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -54,7 +53,7 @@ const ContactPage = () => {
                 asChild
               >
                 <a
-                  href="https://qualibytes.com"
+                  href="https://qubimall.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -67,7 +66,7 @@ const ContactPage = () => {
                 asChild
               >
                 <a
-                  href="https://qualibytes.com"
+                  href="https://qubimall.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

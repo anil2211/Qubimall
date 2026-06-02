@@ -35,11 +35,11 @@ const Footer = () => {
             <div className="dark:text-gray-400">
               <p className="mt-6">Noida, India</p>
 
-              <a href="mailto:support@qualibytes.com" className="block mt-3">
-                support@qualibytes.com
+              <a href="mailto:support@qubimall.com" className="block mt-3">
+                support@qubimall.com
               </a>
-              <a href="tel:+91 9400344657" className="block mt-1">
-                +91 9400344657
+              <a href="tel:+91 9993371923" className="block mt-1">
+                +91 9993371923
               </a>
 
               <div className="flex flex-wrap gap-3 items-center mt-4">
@@ -49,7 +49,7 @@ const Footer = () => {
                   asChild
                 >
                   <a
-                    href="https://qualibytes.com"
+                    href="https://qubimall.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -62,7 +62,7 @@ const Footer = () => {
                   asChild
                 >
                   <a
-                    href="https://qualibytes.com"
+                    href="https://Qubimall.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -75,7 +75,7 @@ const Footer = () => {
                   asChild
                 >
                   <a
-                    href="https://qualibytes.com"
+                    href="https://Qubimall.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -210,12 +210,12 @@ const Footer = () => {
             </span>{" "}
             by{" "}
             <a
-              href="https://qualibytes.com"
+              href="https://Qubimall.com"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium hover:text-primary transition-all duration-300 hover:underline decoration-primary decoration-2 underline-offset-4"
             >
-              QualiBytesShop Team
+              QubimallShop Team
             </a>
           </div>
           

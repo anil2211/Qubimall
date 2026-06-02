@@ -1,4 +1,4 @@
-# 🛍️ QualiBytesShop - Modern E-commerce Platform
+# 🛍️ QubimallShop - Modern E-commerce Platform
 
 [![Next.js](https://img.shields.io/badge/Next.js-14.1.0-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
@@ -6,7 +6,7 @@
 [![Redux](https://img.shields.io/badge/Redux-2.2.1-purple?style=flat-square&logo=redux)](https://redux.js.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-QualiBytesShop is a modern, full-stack e-commerce platform built with Next.js 14, TypeScript, and MongoDB. It features a beautiful UI with Tailwind CSS, secure authentication, real-time cart updates, and a seamless shopping experience.
+QubimallShop is a modern, full-stack e-commerce platform built with Next.js 14, TypeScript, and MongoDB. It features a beautiful UI with Tailwind CSS, secure authentication, real-time cart updates, and a seamless shopping experience.
 
 ## ✨ Features
 
@@ -22,7 +22,7 @@ QualiBytesShop is a modern, full-stack e-commerce platform built with Next.js 14
 
 ## 🏗️ Architecture
 
-QualiBytesShop follows a three-tier architecture pattern:
+QubimallShop follows a three-tier architecture pattern:
 
 ### 1. Presentation Tier (Frontend)
 - Next.js React Components
@@ -181,13 +181,13 @@ docker run -d \
 
 3. Build the main application:
 ```bash
-docker build -t satyamsri/qualibytes-shop-app:1 .
+docker build -t anilvcr/Qubimall-shop-app:1 .
 ```
 
 4. Build and run data migration:
 ```bash
 # Build migration image
-docker build -t satyamsri/qualibytes-shop-migration:1 -f scripts/Dockerfile.migration .
+docker build -t anilvcr/Qubimall-shop-migration:1 -f scripts/Dockerfile.migration .
 
 # Run migration
 docker run --rm \
@@ -203,7 +203,7 @@ docker run -d \
   --network easyshop-network \
   -p 3000:3000 \
   --env-file .env.local \
-  satyamsri/qualibytes-shop-app:1
+  anilvcr/Qubimall-shop-app:1
 ```
 
 ### Accessing the Application
@@ -332,6 +332,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <p>
-    Made with ❤️ by <a href="Qualibytes.com" target="_blank"><b></b></a>
+    Made with ❤️ by <a href="Qubimall.com" target="_blank"><b></b></a>
   </p>
 </div>
