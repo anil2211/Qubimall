@@ -1,0 +1,119 @@
+
+> frontend@0.1.0 build
+> next build
+
+   ▲ Next.js 14.1.0
+   - Environments: .env
+
+   Creating an optimized production build ...
+Compiler server unexpectedly exited with code: null and signal: SIGTERM
+Compiler edge-server unexpectedly exited with code: null and signal: SIGTERM
+Compiler client unexpectedly exited with code: null and signal: SIGTERM
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/36) ...
+Checking authentication status
+No valid authentication found
+Error getting token from request: ex [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at eP (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29358)
+    at Module.eE (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29694)
+    at i (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34572)
+    at Object.get (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34788)
+    at u (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:2345)
+    at l (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:2811)
+    at d (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\check\route.js:1:783)
+    at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42490
+    at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\server\lib\trace\tracer.js:133:36
+    at NoopContextManager.with (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062) {
+  description: "Page couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (9/36) 
+Error getting token from request: ex [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at eP (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29358)
+    at Module.eE (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:29694)
+    at i (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34572)
+    at Object.get (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:34788)
+    at l (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\login\route.js:1:2833)
+    at u (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\login\route.js:1:3299)
+    at d (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:737)
+    at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42490
+    at D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\server\lib\trace\tracer.js:133:36
+    at NoopContextManager.with (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062) {
+  description: "Page couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (18/36) 
+   Generating static pages (27/36) 
+Featured products error: MongooseServerSelectionError: getaddrinfo ENOTFOUND qbs-mongodb
+    at _handleConnectionErrors (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1110:11)
+    at NativeConnection.openUri (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1041:11)
+    at async s (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\check\route.js:1:3682)
+    at async d (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\products\featured\route.js:1:756)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42484
+    at async eI.execute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:32486)
+    at async eI.handle (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:43737)
+    at async exportAppRoute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\routes\app-route.js:77:26)
+    at async exportPageImpl (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:175:20)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:239:16 {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'qbs-mongodb:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+Error fetching books: MongooseServerSelectionError: getaddrinfo ENOTFOUND qbs-mongodb
+    at _handleConnectionErrors (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1110:11)
+    at NativeConnection.openUri (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\mongoose\lib\connection.js:1041:11)
+    at async s (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\auth\me\route.js:1:3433)
+    at async c (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\app\api\products\books\route.js:1:539)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:42484
+    at async eI.execute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:32486)
+    at async eI.handle (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\compiled\next-server\app-route.runtime.prod.js:6:43737)
+    at async exportAppRoute (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\routes\app-route.js:77:26)
+    at async exportPageImpl (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:175:20)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\export\worker.js:239:16 {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'qbs-mongodb:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+ ✓ Generating static pages (36/36) 
+
+> Build error occurred
+Error: ENOENT: no such file or directory, rename 'D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\export\500.html' -> 'D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\.next\server\pages\500.html'
+    at async Object.rename (node:internal/fs/promises:784:10)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:1660:33
+    at async Span.traceAsyncFn (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\trace\trace.js:151:20)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:1711:25
+    at async Span.traceAsyncFn (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\trace\trace.js:151:20)
+    at async D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:1343:17
+    at async Span.traceAsyncFn (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\trace\trace.js:151:20)
+    at async build (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\build\index.js:374:9)
+    at async main (D:\01DEVOPS-PROJECTS\Qubimall\QubiMall-ecommerce\node_modules\next\dist\bin\next:155:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'rename',
+  path: 'D:\\01DEVOPS-PROJECTS\\Qubimall\\QubiMall-ecommerce\\.next\\export\\500.html',
+  dest: 'D:\\01DEVOPS-PROJECTS\\Qubimall\\QubiMall-ecommerce\\.next\\server\\pages\\500.html'
+}

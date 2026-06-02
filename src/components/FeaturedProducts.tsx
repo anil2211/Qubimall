@@ -47,7 +47,7 @@ const FeaturedProducts = ({ featured }: FeaturedParams) => {
         const activeShop = featured || "gadgets";
         const res = await fetch(`/api/products/featured?category=${activeShop}`);
         const data = await res.json();
-        setProducts(data || []);
+        setProducts(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error("Error fetching products:", error);
       } finally {
