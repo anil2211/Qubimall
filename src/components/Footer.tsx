@@ -130,7 +130,15 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:underline hover:text-primary transition-all duration-300"
-                  href={"#"}
+                  href={"/customer-service"}
+                >
+                  Support Center
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:underline hover:text-primary transition-all duration-300"
+                  href={"/faq"}
                 >
                   FAQ & Helps
                 </Link>
@@ -138,7 +146,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:underline hover:text-primary transition-all duration-300"
-                  href={"#"}
+                  href={"/vendor-refund-policies"}
                 >
                   Vendor Refund Policies
                 </Link>
@@ -146,7 +154,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:underline hover:text-primary transition-all duration-300"
-                  href={"#"}
+                  href={"/customer-refund-policies"}
                 >
                   Customer Refund Policies
                 </Link>
@@ -160,7 +168,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:underline hover:text-primary transition-all duration-300"
-                  href={"#"}
+                  href={"/manufacturers"}
                 >
                   Manufacturers
                 </Link>
@@ -168,7 +176,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:underline hover:text-primary transition-all duration-300"
-                  href={"#"}
+                  href={"/privacy-policies"}
                 >
                   Privacy policies
                 </Link>
@@ -176,7 +184,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="hover:underline hover:text-primary transition-all duration-300"
-                  href={"#"}
+                  href={"/terms-conditions"}
                 >
                   Terms & conditions
                 </Link>

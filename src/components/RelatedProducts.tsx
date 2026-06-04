@@ -12,24 +12,29 @@ const RelatedProducts = async ({
   category,
   shop_category,
 }: RelatedProductsProps) => {
-  const res = await fetchData.get(`/products/${shop_category}/${category}`, {
-    limit: "5",
-  });
+  try {
+    const res = await fetchData.get(`/products/${shop_category}/${category}`, {
+      limit: "5",
+    });
 
-  const products: AllProduct[] = res.data.products || [];
-  const settings = layoutSettings?.[shop_category];
+    const products: AllProduct[] = res?.data?.products || [];
+    const settings = layoutSettings?.[shop_category];
 
-  return (
-    <>
-      {products.map((product) => (
-        <ProductCard
-          product={product}
-          variants={settings.productCardVariants}
-          key={product._id}
-        />
-      ))}
-    </>
-  );
+    return (
+      <>
+        {products.map((product) => (
+          <ProductCard
+            product={product}
+            variants={settings?.productCardVariants}
+            key={product._id}
+          />
+        ))}
+      </>
+    );
+  } catch (error) {
+    console.error("Error loading related products:", error);
+    return null;
+  }
 };
 
 export default RelatedProducts;

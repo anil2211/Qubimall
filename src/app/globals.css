@@ -6,7 +6,7 @@
   :root {
     --gradient: hsl(221, 83%, 53%); /* BLUE GRADIENT */
 
-    --background: 220, 14%, 96%;
+    --background: 220 14% 96%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -16,59 +16,57 @@
     --popover-foreground: 240 10% 3.9%;
 
     /* PRIMARY BLUE THEME */
-    --primary: 221, 83%, 53%;           /* BLUE-600 */
+    --primary: 221 83% 53%;           /* BLUE-600 */
     --primary-foreground: 0 0% 100%;    /* White text */
 
-    --secondary: 0, 0%, 100%;
+    --secondary: 0 0% 100%;
     --secondary-foreground: 240 5.9% 10%;
 
-    --muted: 240, 13%, 88%;
+    --muted: 240 13% 88%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 0, 0%, 96%;
+    --accent: 0 0% 96%;
     --accent-foreground: 240 5.9% 10%;
 
-    --destructive: 0, 79%, 49%;
+    --destructive: 0 79% 49%;
     --destructive-foreground: 210 20% 98%;
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
 
-    --ring: 221, 83%, 53%; /* Blue focus ring */
+    --ring: 221 83% 53%; /* Blue focus ring */
 
     --radius: 0.5rem;
 
     --scroll-bg: #f0f0f0;
     --scroll-thumb: #d4d4d4;
-
-    background-color: #001c29;
   }
 
   /* DARK MODE — BLUE THEME */
   .dark {
-    --background: 198, 100%, 5%;
+    --background: 198 100% 5%;
     --foreground: 210 20% 98%;
 
     --card: 224 71.4% 4.1%;
     --card-foreground: 210 20% 98%;
 
-    --popover: 193, 82%, 4%;
+    --popover: 193 82% 4%;
     --popover-foreground: 210 20% 98%;
 
     /* Dark mode BLUE primary */
-    --primary: 217, 91%, 60%; /* Blue-500/400 blend */
+    --primary: 217 91% 60%; /* Blue-500/400 blend */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 196, 75%, 8%;
+    --secondary: 196 75% 8%;
     --secondary-foreground: 210 20% 98%;
 
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 217.9 10.6% 64.9%;
 
-    --accent: 199, 100%, 6%;
+    --accent: 199 100% 6%;
     --accent-foreground: 210 20% 98%;
 
-    --destructive: 0, 79%, 49%;
+    --destructive: 0 79% 49%;
     --destructive-foreground: 210 20% 98%;
 
     --border: 215 27.9% 16.9%;
@@ -80,8 +78,6 @@
 
     --scroll-bg: #000b10;
     --scroll-thumb: #00293b;
-
-    background-color: hsl(240, 13%, 88%);
   }
 }
 

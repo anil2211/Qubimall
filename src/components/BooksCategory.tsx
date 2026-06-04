@@ -6,7 +6,7 @@ const BooksCategory = async () => {
   try {
     const res = await fetchData.get("/products/books");
 
-    const books = (res.data.products as BooksProduct[]) || [];
+    const books = (res?.data?.products as BooksProduct[]) || [];
 
     return (
       <section className="books-category pt-20">
