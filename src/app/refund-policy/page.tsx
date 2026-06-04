@@ -30,7 +30,7 @@ const RefundPolicyPage = () => {
           <section>
             <h2 className="font-semibold text-xl mb-2">Return Eligibility</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Items can be returned within 30 days of delivery if they are
+              Items can be returned within 07 days of delivery if they are
               unused, in original packaging, and in the same condition as
               received. The following items are eligible:
             </p>
