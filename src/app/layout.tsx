@@ -19,6 +19,8 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "QubimallShop - Your One-Stop Shopping Destination",
   description: "Shop the latest trends in fashion, electronics, and more.",
+  verification: {
+    google: "googleb146f202e767abd7"}
 };
 
 export default function RootLayout({
