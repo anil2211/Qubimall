@@ -163,14 +163,30 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-xl font-semibold">Our Information</h4>
+            <h4 className="text-xl font-semibold">Trust & Legal</h4>
             <ul className="mt-6 dark:text-gray-300 [&>li]:mb-3">
               <li>
                 <Link
                   className="hover:underline hover:text-primary transition-all duration-300"
-                  href={"/manufacturers"}
+                  href={"/about"}
                 >
-                  Manufacturers
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:underline hover:text-primary transition-all duration-300"
+                  href={"/shipping-policy"}
+                >
+                  Shipping Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:underline hover:text-primary transition-all duration-300"
+                  href={"/refund-policy"}
+                >
+                  Refund Policy
                 </Link>
               </li>
               <li>
@@ -187,6 +203,14 @@ const Footer = () => {
                   href={"/terms-conditions"}
                 >
                   Terms & conditions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:underline hover:text-primary transition-all duration-300"
+                  href={"/manufacturers"}
+                >
+                  Manufacturers
                 </Link>
               </li>
               <li>

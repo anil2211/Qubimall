@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 
 const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
   process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") ||
   process.env.NEXTAUTH_URL ||
   "http://localhost:3000";
@@ -9,9 +10,12 @@ const staticRoutes = [
   { path: "/", priority: 1.0, changeFreq: "daily" as const },
   { path: "/shops", priority: 0.9, changeFreq: "daily" as const },
   { path: "/offers", priority: 0.8, changeFreq: "weekly" as const },
+  { path: "/about", priority: 0.7, changeFreq: "monthly" as const },
   { path: "/contact", priority: 0.6, changeFreq: "monthly" as const },
   { path: "/faq", priority: 0.7, changeFreq: "monthly" as const },
   { path: "/customer-service", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "/shipping-policy", priority: 0.6, changeFreq: "monthly" as const },
+  { path: "/refund-policy", priority: 0.6, changeFreq: "monthly" as const },
   { path: "/customer-refund-policies", priority: 0.5, changeFreq: "monthly" as const },
   { path: "/vendor-refund-policies", priority: 0.5, changeFreq: "monthly" as const },
   { path: "/manufacturers", priority: 0.5, changeFreq: "monthly" as const },

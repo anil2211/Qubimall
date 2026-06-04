@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 
 const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
   process.env.NEXT_PUBLIC_API_URL?.replace("/api", "") ||
   process.env.NEXTAUTH_URL ||
   "http://localhost:3000";
